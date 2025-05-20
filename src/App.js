@@ -34,7 +34,8 @@ const App = ()=> {
     setprogress(progre);
     }
   // api_key= process.env.REACT_APP_NEWS_API
-  const api_key='fe902e3b9c7941d0ba506a0afa481323'
+  // const api_key='fe902e3b9c7941d0ba506a0afa481323'
+  const api_key='b6ac2a663ae8d86e305cf9d59dc0f4ed'
 
 
 //class
