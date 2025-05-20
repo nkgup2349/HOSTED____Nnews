@@ -45,7 +45,8 @@ const News =(props)=>{
 
 
   const fetchMoreData = async ()=>{  
-    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apikeyy}&page=${page+1}&pageSize=${props.pagesize}`;
+    // const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apikeyy}&page=${page+1}&pageSize=${props.pagesize}`;
+    const url = `https://api.mediastack.com/v1/news?access_key=${props.apikeyy}&categories=${props.category}&countries=${props.country}`;
     setPage(page+1) // ye thoda time leta hi to uske lie pahle argument me daal dia aur baad me apna kabhi bhi set karo 
     let data = await fetch(url);
     let parseddata = await data.json();
