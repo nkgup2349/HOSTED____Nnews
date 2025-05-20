@@ -22,10 +22,7 @@ const News =(props)=>{
   const updateNews = async () => {
     props.setProgress(0);
     console.log("updateNews function runing");
-    const proxy = "https://cors-anywhere.herokuapp.com/";
-    const url = `${proxy}https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apikeyy}&page=${page}&pageSize=${props.pagesize}`;
-
-    // const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apikeyy}&page=${page}&pageSize=${props.pagesize}`;
+    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apikeyy}&page=${page}&pageSize=${props.pagesize}`;
     props.setProgress(30);
     setLoading(true)
     props.setProgress(50);
